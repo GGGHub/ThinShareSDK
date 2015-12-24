@@ -1,0 +1,392 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ABCA8FEB1C2B85FC005B6D6E /* OKWShareActionSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = ABCA8FE71C2B8552005B6D6E /* OKWShareActionSheet.h */; };
+		ABCA8FEC1C2B85FC005B6D6E /* OKWShareContent.h in Headers */ = {isa = PBXBuildFile; fileRef = ABCA8FE91C2B8552005B6D6E /* OKWShareContent.h */; };
+		ABCA8FED1C2B860E005B6D6E /* OKWShareActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCA8FE81C2B8552005B6D6E /* OKWShareActionSheet.m */; };
+		ABCA8FEE1C2B860E005B6D6E /* OKWShareContent.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCA8FEA1C2B8552005B6D6E /* OKWShareContent.m */; };
+		ABCA8FF11C2B865E005B6D6E /* OKWShareDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = ABCA8FEF1C2B865E005B6D6E /* OKWShareDelegate.h */; };
+		ABCA8FF21C2B865E005B6D6E /* OKWShareDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCA8FF01C2B865E005B6D6E /* OKWShareDelegate.m */; };
+		ABCA8FF51C2B8B06005B6D6E /* OKWSystemShare.h in Headers */ = {isa = PBXBuildFile; fileRef = ABCA8FF31C2B8B06005B6D6E /* OKWSystemShare.h */; };
+		ABCA8FF61C2B8B06005B6D6E /* OKWSystemShare.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCA8FF41C2B8B06005B6D6E /* OKWSystemShare.m */; };
+		ABCA8FF91C2B8BCD005B6D6E /* OKWBaseShare.h in Headers */ = {isa = PBXBuildFile; fileRef = ABCA8FF71C2B8BCD005B6D6E /* OKWBaseShare.h */; };
+		ABCA8FFA1C2B8BCD005B6D6E /* OKWBaseShare.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCA8FF81C2B8BCD005B6D6E /* OKWBaseShare.m */; };
+		ABCA8FFF1C2B8E11005B6D6E /* OKWQQShare.h in Headers */ = {isa = PBXBuildFile; fileRef = ABCA8FFD1C2B8E11005B6D6E /* OKWQQShare.h */; };
+		ABCA90001C2B8E11005B6D6E /* OKWQQShare.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCA8FFE1C2B8E11005B6D6E /* OKWQQShare.m */; };
+		ABD1B75B1C23A78900F62588 /* OKWShareSDK.h in Copy Files */ = {isa = PBXBuildFile; fileRef = ABD1B75A1C23A78900F62588 /* OKWShareSDK.h */; };
+		ABD1B75D1C23A78900F62588 /* OKWShareSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD1B75C1C23A78900F62588 /* OKWShareSDK.m */; };
+		ABE551EF1C279607003E900D /* OKWWeChatShare.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE551EE1C279607003E900D /* OKWWeChatShare.m */; };
+		ABE551F41C27AA3F003E900D /* OKWWeChatShare.h in Headers */ = {isa = PBXBuildFile; fileRef = ABE551ED1C279607003E900D /* OKWWeChatShare.h */; };
+		ABE551F51C27AA3F003E900D /* WechatAuthSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = ABE551E91C2794B0003E900D /* WechatAuthSDK.h */; };
+		ABE551F61C27AA3F003E900D /* WXApi.h in Headers */ = {isa = PBXBuildFile; fileRef = ABE551EA1C2794B0003E900D /* WXApi.h */; };
+		ABE551F71C27AA3F003E900D /* WXApiObject.h in Headers */ = {isa = PBXBuildFile; fileRef = ABE551EB1C2794B0003E900D /* WXApiObject.h */; };
+		ABE551F81C27AA3F003E900D /* OKWShareSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = ABD1B75A1C23A78900F62588 /* OKWShareSDK.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		ABD1B7551C23A78900F62588 /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				ABD1B75B1C23A78900F62588 /* OKWShareSDK.h in Copy Files */,
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		ABCA8FE71C2B8552005B6D6E /* OKWShareActionSheet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OKWShareActionSheet.h; sourceTree = "<group>"; };
+		ABCA8FE81C2B8552005B6D6E /* OKWShareActionSheet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OKWShareActionSheet.m; sourceTree = "<group>"; };
+		ABCA8FE91C2B8552005B6D6E /* OKWShareContent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OKWShareContent.h; sourceTree = "<group>"; };
+		ABCA8FEA1C2B8552005B6D6E /* OKWShareContent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OKWShareContent.m; sourceTree = "<group>"; };
+		ABCA8FEF1C2B865E005B6D6E /* OKWShareDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKWShareDelegate.h; sourceTree = "<group>"; };
+		ABCA8FF01C2B865E005B6D6E /* OKWShareDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OKWShareDelegate.m; sourceTree = "<group>"; };
+		ABCA8FF31C2B8B06005B6D6E /* OKWSystemShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKWSystemShare.h; sourceTree = "<group>"; };
+		ABCA8FF41C2B8B06005B6D6E /* OKWSystemShare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OKWSystemShare.m; sourceTree = "<group>"; };
+		ABCA8FF71C2B8BCD005B6D6E /* OKWBaseShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKWBaseShare.h; sourceTree = "<group>"; };
+		ABCA8FF81C2B8BCD005B6D6E /* OKWBaseShare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OKWBaseShare.m; sourceTree = "<group>"; };
+		ABCA8FFD1C2B8E11005B6D6E /* OKWQQShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKWQQShare.h; sourceTree = "<group>"; };
+		ABCA8FFE1C2B8E11005B6D6E /* OKWQQShare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OKWQQShare.m; sourceTree = "<group>"; };
+		ABD1B7571C23A78900F62588 /* libOKWShareSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOKWShareSDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABD1B75A1C23A78900F62588 /* OKWShareSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OKWShareSDK.h; sourceTree = "<group>"; };
+		ABD1B75C1C23A78900F62588 /* OKWShareSDK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OKWShareSDK.m; sourceTree = "<group>"; };
+		ABE551E91C2794B0003E900D /* WechatAuthSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
+		ABE551EA1C2794B0003E900D /* WXApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		ABE551EB1C2794B0003E900D /* WXApiObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		ABE551ED1C279607003E900D /* OKWWeChatShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKWWeChatShare.h; sourceTree = "<group>"; };
+		ABE551EE1C279607003E900D /* OKWWeChatShare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OKWWeChatShare.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ABD1B7541C23A78900F62588 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ABCA8FE61C2B8552005B6D6E /* core */ = {
+			isa = PBXGroup;
+			children = (
+				ABCA8FE71C2B8552005B6D6E /* OKWShareActionSheet.h */,
+				ABCA8FE81C2B8552005B6D6E /* OKWShareActionSheet.m */,
+				ABCA8FE91C2B8552005B6D6E /* OKWShareContent.h */,
+				ABCA8FEA1C2B8552005B6D6E /* OKWShareContent.m */,
+				ABCA8FEF1C2B865E005B6D6E /* OKWShareDelegate.h */,
+				ABCA8FF01C2B865E005B6D6E /* OKWShareDelegate.m */,
+				ABCA8FF71C2B8BCD005B6D6E /* OKWBaseShare.h */,
+				ABCA8FF81C2B8BCD005B6D6E /* OKWBaseShare.m */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		ABCA8FFC1C2B8DFE005B6D6E /* QQ */ = {
+			isa = PBXGroup;
+			children = (
+				ABCA8FFD1C2B8E11005B6D6E /* OKWQQShare.h */,
+				ABCA8FFE1C2B8E11005B6D6E /* OKWQQShare.m */,
+			);
+			path = QQ;
+			sourceTree = "<group>";
+		};
+		ABD1B74E1C23A78900F62588 = {
+			isa = PBXGroup;
+			children = (
+				ABD1B7591C23A78900F62588 /* OKWShareSDK */,
+				ABD1B7581C23A78900F62588 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ABD1B7581C23A78900F62588 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ABD1B7571C23A78900F62588 /* libOKWShareSDK.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ABD1B7591C23A78900F62588 /* OKWShareSDK */ = {
+			isa = PBXGroup;
+			children = (
+				ABCA8FE61C2B8552005B6D6E /* core */,
+				ABE327621C2A7B0800035255 /* SystemShare */,
+				ABD1B76B1C23A8DB00F62588 /* WeChat */,
+				ABCA8FFC1C2B8DFE005B6D6E /* QQ */,
+				ABD1B75A1C23A78900F62588 /* OKWShareSDK.h */,
+				ABD1B75C1C23A78900F62588 /* OKWShareSDK.m */,
+			);
+			path = OKWShareSDK;
+			sourceTree = "<group>";
+		};
+		ABD1B76B1C23A8DB00F62588 /* WeChat */ = {
+			isa = PBXGroup;
+			children = (
+				ABE551EC1C2794CC003E900D /* ShareClass */,
+				ABE551E81C2794B0003E900D /* API */,
+			);
+			path = WeChat;
+			sourceTree = "<group>";
+		};
+		ABE327621C2A7B0800035255 /* SystemShare */ = {
+			isa = PBXGroup;
+			children = (
+				ABCA8FF31C2B8B06005B6D6E /* OKWSystemShare.h */,
+				ABCA8FF41C2B8B06005B6D6E /* OKWSystemShare.m */,
+			);
+			path = SystemShare;
+			sourceTree = "<group>";
+		};
+		ABE551E81C2794B0003E900D /* API */ = {
+			isa = PBXGroup;
+			children = (
+				ABE551E91C2794B0003E900D /* WechatAuthSDK.h */,
+				ABE551EA1C2794B0003E900D /* WXApi.h */,
+				ABE551EB1C2794B0003E900D /* WXApiObject.h */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		ABE551EC1C2794CC003E900D /* ShareClass */ = {
+			isa = PBXGroup;
+			children = (
+				ABE551ED1C279607003E900D /* OKWWeChatShare.h */,
+				ABE551EE1C279607003E900D /* OKWWeChatShare.m */,
+			);
+			path = ShareClass;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		ABE551F31C27AA29003E900D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABCA8FEB1C2B85FC005B6D6E /* OKWShareActionSheet.h in Headers */,
+				ABCA8FEC1C2B85FC005B6D6E /* OKWShareContent.h in Headers */,
+				ABE551F41C27AA3F003E900D /* OKWWeChatShare.h in Headers */,
+				ABE551F51C27AA3F003E900D /* WechatAuthSDK.h in Headers */,
+				ABCA8FF91C2B8BCD005B6D6E /* OKWBaseShare.h in Headers */,
+				ABCA8FFF1C2B8E11005B6D6E /* OKWQQShare.h in Headers */,
+				ABE551F61C27AA3F003E900D /* WXApi.h in Headers */,
+				ABE551F71C27AA3F003E900D /* WXApiObject.h in Headers */,
+				ABCA8FF11C2B865E005B6D6E /* OKWShareDelegate.h in Headers */,
+				ABE551F81C27AA3F003E900D /* OKWShareSDK.h in Headers */,
+				ABCA8FF51C2B8B06005B6D6E /* OKWSystemShare.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		ABD1B7561C23A78900F62588 /* OKWShareSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABD1B7601C23A78900F62588 /* Build configuration list for PBXNativeTarget "OKWShareSDK" */;
+			buildPhases = (
+				ABD1B7531C23A78900F62588 /* Sources */,
+				ABD1B7541C23A78900F62588 /* Frameworks */,
+				ABD1B7551C23A78900F62588 /* Copy Files */,
+				ABE551F31C27AA29003E900D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OKWShareSDK;
+			productName = OKWShareSDK;
+			productReference = ABD1B7571C23A78900F62588 /* libOKWShareSDK.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ABD1B74F1C23A78900F62588 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = okwei;
+				TargetAttributes = {
+					ABD1B7561C23A78900F62588 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = ABD1B7521C23A78900F62588 /* Build configuration list for PBXProject "OKWShareSDK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = ABD1B74E1C23A78900F62588;
+			productRefGroup = ABD1B7581C23A78900F62588 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ABD1B7561C23A78900F62588 /* OKWShareSDK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ABD1B7531C23A78900F62588 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABCA8FF61C2B8B06005B6D6E /* OKWSystemShare.m in Sources */,
+				ABCA8FED1C2B860E005B6D6E /* OKWShareActionSheet.m in Sources */,
+				ABCA8FFA1C2B8BCD005B6D6E /* OKWBaseShare.m in Sources */,
+				ABCA8FEE1C2B860E005B6D6E /* OKWShareContent.m in Sources */,
+				ABCA8FF21C2B865E005B6D6E /* OKWShareDelegate.m in Sources */,
+				ABD1B75D1C23A78900F62588 /* OKWShareSDK.m in Sources */,
+				ABCA90001C2B8E11005B6D6E /* OKWQQShare.m in Sources */,
+				ABE551EF1C279607003E900D /* OKWWeChatShare.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		ABD1B75E1C23A78900F62588 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		ABD1B75F1C23A78900F62588 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ABD1B7611C23A78900F62588 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include;
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)";
+				New_Setting = "";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}";
+			};
+			name = Debug;
+		};
+		ABD1B7621C23A78900F62588 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include;
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)";
+				New_Setting = "";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ABD1B7521C23A78900F62588 /* Build configuration list for PBXProject "OKWShareSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABD1B75E1C23A78900F62588 /* Debug */,
+				ABD1B75F1C23A78900F62588 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABD1B7601C23A78900F62588 /* Build configuration list for PBXNativeTarget "OKWShareSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABD1B7611C23A78900F62588 /* Debug */,
+				ABD1B7621C23A78900F62588 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ABD1B74F1C23A78900F62588 /* Project object */;
+}
