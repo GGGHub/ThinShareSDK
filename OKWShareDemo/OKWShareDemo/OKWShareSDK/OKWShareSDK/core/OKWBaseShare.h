@@ -14,8 +14,14 @@
  *  发送链接消息
  *
  *  @param content 内容
- *  @param type    消息种类
+ *  @param type    分享到哪里
  */
 +(void)sendLinkMessage:(OKWShareContent *)content messageType:(OKWShareType)type;
-
+/**
+ *  发送文本消息
+ *
+ *  @param content 内容
+ *  @param type    分享到哪里
+ */
++(void)sendTextMessage:(OKWShareContent *)content messageType:(OKWShareType)type;
 @end

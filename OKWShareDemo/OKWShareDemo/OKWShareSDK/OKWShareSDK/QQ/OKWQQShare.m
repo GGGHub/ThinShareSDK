@@ -29,6 +29,7 @@
     });
     return shareInstance;
 }
+#pragma mark - Send Link
 +(void)sendLinkMessage:(OKWShareContent *)content messageType:(OKWShareType)type
 {
     if (![TencentOAuth iphoneQQInstalled]) {
@@ -62,5 +63,37 @@
     new.cflag=kQQAPICtrlFlagQZoneShareOnStart;
     SendMessageToQQReq * req = [SendMessageToQQReq  reqWithContent:new];
     [QQApiInterface sendReq:req];
+}
+#pragma mark - Send Text
++(void)sendTextMessage:(OKWShareContent *)content messageType:(OKWShareType)type
+{
+    switch (type) {
+        case OKWShareTypeQQ:
+            [[OKWQQShare shareInstance] sendTextMessageToQQ:content];
+            break;
+        case OKWShareTypeQQSpace:
+            [[OKWQQShare shareInstance] sendTextMessageToQQSpace:content];
+            break;
+        default:
+            break;
+    }
+}
+-(void)sendTextMessageToQQSpace:(OKWShareContent *)content
+{
+    QQApiImageArrayForQZoneObject *txtObj = [QQApiImageArrayForQZoneObject objectWithimageDataArray:nil title:content.text];
+    SendMessageToQQReq* req = [SendMessageToQQReq reqWithContent:txtObj];
+   [QQApiInterface sendReq:req];
+
+}
+-(void)sendTextMessageToQQ:(OKWShareContent *)content
+{
+    QQApiTextObject * textObj = [QQApiTextObject objectWithText:content.text];
+    
+    SendMessageToQQReq * req = [SendMessageToQQReq reqWithContent:textObj];
+    
+    textObj.cflag = kQQAPICtrlFlagQQShare;
+    
+    [QQApiInterface sendReq:req];
+
 }
 @end

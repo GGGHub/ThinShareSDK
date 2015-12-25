@@ -27,17 +27,7 @@ typedef NS_ENUM(NSUInteger,OKWShareType) {
  *  @return 返回OKWShareType类型的数组
  */
 +(NSArray *)getShareListType:(OKWShareType)shareType,...NS_REQUIRES_NIL_TERMINATION;
-/**
- *  创建分享web的内容
- *
- *  @param title         分享的链接
- *  @param description   分享的描述
- *  @param pageUrl       分享的URL
- *  @param thumbImageData 分享的缩略图
- *
- *  @return 分享的数据模型
- */
-+(id)webContentTitle:(NSString *)title description:(NSString *)description webpageUrl:(NSString *)pageUrl thumbImageData:(NSData *)thumbImageData;
+
 /**
  *  默认分享菜单
  *
@@ -60,7 +50,25 @@ typedef NS_ENUM(NSUInteger,OKWShareType) {
  *  @param model 分享的数据模型
  */
 +(void)share:(OKWShareType)type model:(id)model;
-
+/**
+ *  创建分享web的内容
+ *
+ *  @param title         分享的链接
+ *  @param description   分享的描述
+ *  @param pageUrl       分享的URL
+ *  @param thumbImageData 分享的缩略图
+ *
+ *  @return 分享的数据模型
+ */
++(id)webContentTitle:(NSString *)title description:(NSString *)description webpageUrl:(NSString *)pageUrl thumbImageData:(NSData *)thumbImageData;
+/**
+ *  创建分享文本内容
+ *
+ *  @param content 分享的内容
+ *
+ *  @return 分享的数据模型
+ */
++(id)textContent:(NSString *)content;
 /**
  *  获取分享代理对象
  */

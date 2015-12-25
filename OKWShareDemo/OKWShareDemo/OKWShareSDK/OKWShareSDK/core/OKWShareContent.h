@@ -9,12 +9,16 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 typedef NS_ENUM(NSUInteger,OKWShareDataType) {
-    OKWShareWabURL
+    OKWShareWabURL,
+    OKWShareText
 };
 @interface OKWShareContent : NSObject
-@property (nonatomic,copy) NSString *title;
-@property (nonatomic,copy) NSString *description;
-@property (nonatomic,copy) NSString *webpageUrl;
-@property (nonatomic,copy) NSData *thumbImageData;
-@property (nonatomic) OKWShareDataType dataType;
+
+@property (nonatomic,copy) NSString *title; //标题
+@property (nonatomic,copy) NSString *description;   //描述信息
+@property (nonatomic,copy) NSString *webpageUrl;    //wap链接
+@property (nonatomic,copy) NSData *thumbImageData;  //缩略图数据
+@property (nonatomic) NSString *text;   //文本信息
+
+@property (nonatomic) OKWShareDataType dataType;    //内容类型
 @end

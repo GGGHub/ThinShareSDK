@@ -20,6 +20,8 @@
 		ABCA8FFF1C2B8E11005B6D6E /* OKWQQShare.h in Headers */ = {isa = PBXBuildFile; fileRef = ABCA8FFD1C2B8E11005B6D6E /* OKWQQShare.h */; };
 		ABCA90001C2B8E11005B6D6E /* OKWQQShare.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCA8FFE1C2B8E11005B6D6E /* OKWQQShare.m */; };
 		ABCA90141C2C106E005B6D6E /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABCA90111C2C07D9005B6D6E /* TencentOpenAPI.framework */; };
+		ABCA901A1C2D2053005B6D6E /* OKWUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = ABCA90181C2D2053005B6D6E /* OKWUtility.h */; };
+		ABCA901B1C2D2053005B6D6E /* OKWUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCA90191C2D2053005B6D6E /* OKWUtility.m */; };
 		ABD1B75B1C23A78900F62588 /* OKWShareSDK.h in Copy Files */ = {isa = PBXBuildFile; fileRef = ABD1B75A1C23A78900F62588 /* OKWShareSDK.h */; };
 		ABD1B75D1C23A78900F62588 /* OKWShareSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD1B75C1C23A78900F62588 /* OKWShareSDK.m */; };
 		ABE551EF1C279607003E900D /* OKWWeChatShare.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE551EE1C279607003E900D /* OKWWeChatShare.m */; };
@@ -58,6 +60,8 @@
 		ABCA8FFD1C2B8E11005B6D6E /* OKWQQShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKWQQShare.h; sourceTree = "<group>"; };
 		ABCA8FFE1C2B8E11005B6D6E /* OKWQQShare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OKWQQShare.m; sourceTree = "<group>"; };
 		ABCA90111C2C07D9005B6D6E /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentOpenAPI.framework; sourceTree = "<group>"; };
+		ABCA90181C2D2053005B6D6E /* OKWUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKWUtility.h; sourceTree = "<group>"; };
+		ABCA90191C2D2053005B6D6E /* OKWUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OKWUtility.m; sourceTree = "<group>"; };
 		ABD1B7571C23A78900F62588 /* libOKWShareSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOKWShareSDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABD1B75A1C23A78900F62588 /* OKWShareSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OKWShareSDK.h; sourceTree = "<group>"; };
 		ABD1B75C1C23A78900F62588 /* OKWShareSDK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OKWShareSDK.m; sourceTree = "<group>"; };
@@ -91,6 +95,8 @@
 				ABCA8FF01C2B865E005B6D6E /* OKWShareDelegate.m */,
 				ABCA8FF71C2B8BCD005B6D6E /* OKWBaseShare.h */,
 				ABCA8FF81C2B8BCD005B6D6E /* OKWBaseShare.m */,
+				ABCA90181C2D2053005B6D6E /* OKWUtility.h */,
+				ABCA90191C2D2053005B6D6E /* OKWUtility.m */,
 			);
 			path = core;
 			sourceTree = "<group>";
@@ -193,6 +199,7 @@
 				ABCA8FF91C2B8BCD005B6D6E /* OKWBaseShare.h in Headers */,
 				ABCA8FFF1C2B8E11005B6D6E /* OKWQQShare.h in Headers */,
 				ABE551F61C27AA3F003E900D /* WXApi.h in Headers */,
+				ABCA901A1C2D2053005B6D6E /* OKWUtility.h in Headers */,
 				ABE551F71C27AA3F003E900D /* WXApiObject.h in Headers */,
 				ABCA8FF11C2B865E005B6D6E /* OKWShareDelegate.h in Headers */,
 				ABE551F81C27AA3F003E900D /* OKWShareSDK.h in Headers */,
@@ -259,6 +266,7 @@
 			files = (
 				ABCA8FF61C2B8B06005B6D6E /* OKWSystemShare.m in Sources */,
 				ABCA8FED1C2B860E005B6D6E /* OKWShareActionSheet.m in Sources */,
+				ABCA901B1C2D2053005B6D6E /* OKWUtility.m in Sources */,
 				ABCA8FFA1C2B8BCD005B6D6E /* OKWBaseShare.m in Sources */,
 				ABCA8FEE1C2B860E005B6D6E /* OKWShareContent.m in Sources */,
 				ABCA8FF21C2B865E005B6D6E /* OKWShareDelegate.m in Sources */,

@@ -46,6 +46,13 @@
     return shareContent;
     
 }
++(id)textContent:(NSString *)content
+{
+    OKWShareContent *shareContent = [OKWShareContent new];
+    shareContent.text = content;
+    shareContent.dataType = OKWShareText;
+    return shareContent;
+}
 +(void)defaultShareMenu:(NSString *)menuTitle model:(id)model
 {
     [OKWShareSDK defaultOptionShareMenu:menuTitle model:model types:[OKWShareSDK getShareListType:OKWShareTypeWeChatSession,OKWShareTypeWeChatTimeLine,OKWShareTypeWeChatFav,OKWShareTypeQQ,OKWShareTypeQQSpace,OKWShareTypeMail,OKWShareTypeSMS,nil]];
@@ -69,7 +76,9 @@
         case OKWShareWabURL:
             [OKWShareSDK shareLink:type model:model];
             break;
-            
+        case OKWShareText:
+            [OKWShareSDK shareLText:type model:model];
+            break;
         default:
             break;
     }
@@ -77,6 +86,10 @@
 +(void)shareLink:(OKWShareType)type model:(id)model
 {
     [OKWBaseShare sendLinkMessage:model messageType:type];
+}
++(void)shareLText:(OKWShareType)type model:(id)model
+{
+    [OKWBaseShare sendTextMessage:model messageType:type];
 }
 +(id)shareDelegate
 {

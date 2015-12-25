@@ -11,6 +11,7 @@
 #import <MessageUI/MessageUI.h>
 #import "OKWShareDelegate.h"
 @implementation OKWSystemShare
+#pragma mark - Send Link
 +(void)sendLinkMessage:(OKWShareContent *)content messageType:(OKWShareType)type
 {
     switch (type) {
@@ -83,7 +84,57 @@
         [alert show];
     }
 }
+#pragma mark - Send Text
++(void)sendTextMessage:(OKWShareContent *)content messageType:(OKWShareType)type
+{
+    switch (type) {
+        case OKWShareTypeSMS:
+            [OKWSystemShare sendTextMessageToSMS:content];
+            break;
+        case OKWShareTypeMail:
+            [OKWSystemShare sendTextMessageToMail:content];
+            break;
+        default:
+            break;
+    }
+}
++(void)sendTextMessageToSMS:(OKWShareContent *)content
+{
+    if([MFMessageComposeViewController canSendText]){
+        MFMessageComposeViewController *messageController=[[MFMessageComposeViewController alloc]init];
+        
+        //set delegate
+        messageController.messageComposeDelegate=[OKWShareDelegate shareInstance];
 
+        //message body
+        NSString *body = content.text;
+        messageController.body=body;
+        [[OKWSystemShare getCurrentVC] presentViewController:messageController animated:YES completion:nil];
+    }
+    else
+    {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"该设备不支持发送短信" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+        [alert show];
+    }
+}
++(void)sendTextMessageToMail:(OKWShareContent *)content
+{
+    //if can send mail
+    if ([MFMailComposeViewController canSendMail]) {
+        MFMailComposeViewController *mailController=[[MFMailComposeViewController alloc]init];
+        mailController.mailComposeDelegate=[OKWShareDelegate shareInstance];
+        //set content
+        NSString *body = content.text;
+        [mailController setMessageBody:body isHTML:YES];
+        
+        [[OKWSystemShare getCurrentVC] presentViewController:mailController animated:YES completion:nil];
+    }
+    else
+    {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"该设备不支持发送邮件" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+        [alert show];
+    }
+}
 #pragma mark - Current View Controller
 +(UIViewController *)getCurrentVC{
     UIViewController *result = nil;
