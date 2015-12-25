@@ -53,7 +53,7 @@ ThinShareSDK
     [OKWShareSDK defaultShareMenu:@"title" model:model];
 ```
 
-#关于扩展与源码说明请参考[我的博客]()<br>
+#关于扩展与源码说明请参考[我的博客](http://blog.csdn.net/GGGHub/article/details/50404590)<br>
 #QQ:358812735
 
 
