@@ -63,9 +63,9 @@
     [[UIApplication sharedApplication].delegate window];
     OKWShareActionSheet *actionSheet = [[OKWShareActionSheet alloc] initWithTitle:menuTitle];
     [types enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-       [actionSheet addButtonWithTitle:shareData[obj][@"title"] image:[UIImage imageNamed:shareData[obj][@"image"]] handle:^{
-           [OKWShareSDK share:[obj unsignedIntValue] model:model];
-       }];
+        [actionSheet addButtonWithTitle:shareData[obj][@"title"] image:[UIImage imageNamed:shareData[obj][@"image"]]?[UIImage imageNamed:shareData[obj][@"image"]]:[UIImage new] handle:^{
+            [OKWShareSDK share:[obj unsignedIntValue] model:model];
+        }];
     }];
     [actionSheet showInView:[[UIApplication sharedApplication].delegate window]];
 }
