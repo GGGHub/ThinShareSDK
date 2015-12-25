@@ -62,6 +62,7 @@
 		ABCA90111C2C07D9005B6D6E /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentOpenAPI.framework; sourceTree = "<group>"; };
 		ABCA90181C2D2053005B6D6E /* OKWUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKWUtility.h; sourceTree = "<group>"; };
 		ABCA90191C2D2053005B6D6E /* OKWUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OKWUtility.m; sourceTree = "<group>"; };
+		ABCA906A1C2D5347005B6D6E /* OKWShareSDK-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OKWShareSDK-Prefix.pch"; sourceTree = "<group>"; };
 		ABD1B7571C23A78900F62588 /* libOKWShareSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOKWShareSDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABD1B75A1C23A78900F62588 /* OKWShareSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OKWShareSDK.h; sourceTree = "<group>"; };
 		ABD1B75C1C23A78900F62588 /* OKWShareSDK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OKWShareSDK.m; sourceTree = "<group>"; };
@@ -144,6 +145,7 @@
 				ABCA8FFC1C2B8DFE005B6D6E /* QQ */,
 				ABD1B75A1C23A78900F62588 /* OKWShareSDK.h */,
 				ABD1B75C1C23A78900F62588 /* OKWShareSDK.m */,
+				ABCA906A1C2D5347005B6D6E /* OKWShareSDK-Prefix.pch */,
 			);
 			path = OKWShareSDK;
 			sourceTree = "<group>";
@@ -366,6 +368,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/OKWShareSDK/QQ/API",
 				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OKWShareSDK/OKWShareSDK-Prefix.pch";
 				HEADER_SEARCH_PATHS = /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include;
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)";
 				New_Setting = "";
@@ -383,6 +387,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/OKWShareSDK/QQ/API",
 				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OKWShareSDK/OKWShareSDK-Prefix.pch";
 				HEADER_SEARCH_PATHS = /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include;
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)";
 				New_Setting = "";

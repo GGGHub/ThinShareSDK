@@ -11,9 +11,7 @@
 #import <TencentOpenAPI/TencentOAuth.h>
 #import <TencentOpenAPI/QQApiInterface.h>
 
-#define WEIXIN_APP_KEY        @"wxae9c0539569e888b"
-#define WEIXIN_AppSecret      @"20b8691232ff0595c39660f06b5a7dd9"
-#define QQ_APP_KEY  @"tencent1104783662"
+
 
 @interface AppDelegate ()
 
@@ -45,10 +43,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
     [WXApi registerApp:WEIXIN_APP_KEY];
-    
-    
+    //QQ的注册写在了静态库里面
     return YES;
 }
 

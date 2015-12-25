@@ -1,0 +1,15 @@
+//
+//  OKWShareDemo-Prefix.pch
+//  OKWShareDemo
+//
+//  Created by Labanotation on 15/12/25.
+//  Copyright © 2015年 okwei. All rights reserved.
+//
+
+#ifndef OKWShareDemo_Prefix_h
+#define OKWShareDemo_Prefix_h
+
+#define WEIXIN_APP_KEY        @"wxae9c0539569e888b"
+#define QQ_APP_KEY  @"tencent1104783662"
+
+#endif /* OKWShareDemo_Prefix_h */

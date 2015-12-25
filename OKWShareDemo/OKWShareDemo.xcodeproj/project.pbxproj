@@ -40,6 +40,7 @@
 		ABCA90091C2BDFDC005B6D6E /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
 		ABCA900C1C2C06FE005B6D6E /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentOpenAPI.framework; sourceTree = "<group>"; };
 		ABCA900D1C2C06FE005B6D6E /* TencentOpenApi_IOS_Bundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TencentOpenApi_IOS_Bundle.bundle; sourceTree = "<group>"; };
+		ABCA90691C2D512B005B6D6E /* OKWShareDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OKWShareDemo-Prefix.pch"; sourceTree = "<group>"; };
 		ABD1B7341C23A75A00F62588 /* OKWShareDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OKWShareDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABD1B7381C23A75A00F62588 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ABD1B73A1C23A75A00F62588 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -143,6 +144,7 @@
 				ABD1B73B1C23A75A00F62588 /* AppDelegate.m */,
 				ABD1B73D1C23A75A00F62588 /* ViewController.h */,
 				ABD1B73E1C23A75A00F62588 /* ViewController.m */,
+				ABCA90691C2D512B005B6D6E /* OKWShareDemo-Prefix.pch */,
 				ABE327541C2A38AE00035255 /* OKWShareResource.bundle */,
 				ABD1B7401C23A75A00F62588 /* Main.storyboard */,
 				ABD1B7431C23A75A00F62588 /* Assets.xcassets */,
@@ -364,6 +366,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/OKWShareDemo/QQSDK",
 				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OKWShareDemo/OKWShareDemo-Prefix.pch";
 				HEADER_SEARCH_PATHS = "${SDK_ROOT}/usr/include/libxml2";
 				INFOPLIST_FILE = OKWShareDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -389,6 +393,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/OKWShareDemo/QQSDK",
 				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OKWShareDemo/OKWShareDemo-Prefix.pch";
 				HEADER_SEARCH_PATHS = "${SDK_ROOT}/usr/include/libxml2";
 				INFOPLIST_FILE = OKWShareDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;

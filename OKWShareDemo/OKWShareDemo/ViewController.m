@@ -29,6 +29,7 @@
     id model = [OKWShareSDK webContentTitle:@"分享链接" description:@"测试分享" webpageUrl:@"www.baidu.com" thumbImageData:data];   //构建Model
     
     NSArray *typeArray = [OKWShareSDK getShareListType:OKWShareTypeQQ,OKWShareTypeWeChatFav,OKWShareTypeSMS ,nil];  //构建分享类型
+
     
     [OKWShareSDK defaultOptionShareMenu:@"title" model:model types:typeArray];
     

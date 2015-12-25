@@ -14,7 +14,6 @@
 #import <TencentOpenAPI/QQApiInterface.h>
 #import <TencentOpenAPI/TencentMessageObject.h>
 
-#define QQ_APP_KEY  @"1104783662"
 @interface OKWQQShare ()
 @property (nonatomic, strong)TencentOAuth *oauth;
 @end
