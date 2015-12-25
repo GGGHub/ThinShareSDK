@@ -8,10 +8,13 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+typedef NS_ENUM(NSUInteger,OKWShareDataType) {
+    OKWShareWabURL
+};
 @interface OKWShareContent : NSObject
 @property (nonatomic,copy) NSString *title;
 @property (nonatomic,copy) NSString *description;
 @property (nonatomic,copy) NSString *webpageUrl;
 @property (nonatomic,copy) NSData *thumbImageData;
-
+@property (nonatomic) OKWShareDataType dataType;
 @end

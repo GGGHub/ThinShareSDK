@@ -19,6 +19,7 @@
 		ABCA8FFA1C2B8BCD005B6D6E /* OKWBaseShare.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCA8FF81C2B8BCD005B6D6E /* OKWBaseShare.m */; };
 		ABCA8FFF1C2B8E11005B6D6E /* OKWQQShare.h in Headers */ = {isa = PBXBuildFile; fileRef = ABCA8FFD1C2B8E11005B6D6E /* OKWQQShare.h */; };
 		ABCA90001C2B8E11005B6D6E /* OKWQQShare.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCA8FFE1C2B8E11005B6D6E /* OKWQQShare.m */; };
+		ABCA90141C2C106E005B6D6E /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABCA90111C2C07D9005B6D6E /* TencentOpenAPI.framework */; };
 		ABD1B75B1C23A78900F62588 /* OKWShareSDK.h in Copy Files */ = {isa = PBXBuildFile; fileRef = ABD1B75A1C23A78900F62588 /* OKWShareSDK.h */; };
 		ABD1B75D1C23A78900F62588 /* OKWShareSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD1B75C1C23A78900F62588 /* OKWShareSDK.m */; };
 		ABE551EF1C279607003E900D /* OKWWeChatShare.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE551EE1C279607003E900D /* OKWWeChatShare.m */; };
@@ -56,6 +57,7 @@
 		ABCA8FF81C2B8BCD005B6D6E /* OKWBaseShare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OKWBaseShare.m; sourceTree = "<group>"; };
 		ABCA8FFD1C2B8E11005B6D6E /* OKWQQShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKWQQShare.h; sourceTree = "<group>"; };
 		ABCA8FFE1C2B8E11005B6D6E /* OKWQQShare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OKWQQShare.m; sourceTree = "<group>"; };
+		ABCA90111C2C07D9005B6D6E /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentOpenAPI.framework; sourceTree = "<group>"; };
 		ABD1B7571C23A78900F62588 /* libOKWShareSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOKWShareSDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABD1B75A1C23A78900F62588 /* OKWShareSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OKWShareSDK.h; sourceTree = "<group>"; };
 		ABD1B75C1C23A78900F62588 /* OKWShareSDK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OKWShareSDK.m; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABCA90141C2C106E005B6D6E /* TencentOpenAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,10 +98,19 @@
 		ABCA8FFC1C2B8DFE005B6D6E /* QQ */ = {
 			isa = PBXGroup;
 			children = (
+				ABCA90101C2C07D9005B6D6E /* API */,
 				ABCA8FFD1C2B8E11005B6D6E /* OKWQQShare.h */,
 				ABCA8FFE1C2B8E11005B6D6E /* OKWQQShare.m */,
 			);
 			path = QQ;
+			sourceTree = "<group>";
+		};
+		ABCA90101C2C07D9005B6D6E /* API */ = {
+			isa = PBXGroup;
+			children = (
+				ABCA90111C2C07D9005B6D6E /* TencentOpenAPI.framework */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 		ABD1B74E1C23A78900F62588 = {
@@ -342,6 +354,10 @@
 		ABD1B7611C23A78900F62588 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OKWShareSDK/QQ/API",
+				);
 				HEADER_SEARCH_PATHS = /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include;
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)";
 				New_Setting = "";
@@ -355,6 +371,10 @@
 		ABD1B7621C23A78900F62588 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OKWShareSDK/QQ/API",
+				);
 				HEADER_SEARCH_PATHS = /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include;
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)";
 				New_Setting = "";

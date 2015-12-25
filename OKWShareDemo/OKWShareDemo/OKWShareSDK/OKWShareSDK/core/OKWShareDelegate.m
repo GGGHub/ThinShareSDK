@@ -9,6 +9,9 @@
 #import "OKWShareDelegate.h"
 #import "WXApi.h"
 #import "WXApiObject.h"
+#import <TencentOpenAPI/sdkdef.h>
+#import <TencentOpenAPI/TencentMessageObject.h>
+#import <TencentOpenAPI/QQApiInterfaceObject.h>
 @implementation OKWShareDelegate
 +(instancetype)shareInstance
 {
@@ -21,14 +24,20 @@
 }
 
 #pragma mark - WeChat Delegate
--(void) onResp:(BaseResp*)resp
+#pragma mark - QQ Delegate
+-(void) onResp:(id)resp
 {
-    if([resp isKindOfClass:[SendMessageToWXResp class]])
+    //WeChat Delegate
+    if([resp isKindOfClass:[BaseResp class]])
     {
-       //发送消息后回到App后回调
+       
+    }
+    //QQ Delegate
+    if ([resp isKindOfClass:[QQBaseResp class]]) {
+        
     }
 }
-#pragma mark - QQ Delegate
+
 
 #pragma mark - System Message Delegate
 //发送完成，不管成功与否

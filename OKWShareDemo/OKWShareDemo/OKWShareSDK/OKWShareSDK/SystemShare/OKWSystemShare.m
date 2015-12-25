@@ -45,6 +45,11 @@
         messageController.body=body;
         [[OKWSystemShare getCurrentVC] presentViewController:messageController animated:YES completion:nil];
     }
+    else
+    {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"该设备不支持发送短信" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+        [alert show];
+    }
 
 }
 +(void)sendLinkMessageToMail:(OKWShareContent *)content
@@ -71,6 +76,11 @@
         [mailController addAttachmentData:content.thumbImageData mimeType:@"image/jpeg" fileName:dateString];//第二个参数是mimeType类型，jpg图片对应image/jpeg
         
         [[OKWSystemShare getCurrentVC] presentViewController:mailController animated:YES completion:nil];
+    }
+    else
+    {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"该设备不支持发送邮件" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+        [alert show];
     }
 }
 

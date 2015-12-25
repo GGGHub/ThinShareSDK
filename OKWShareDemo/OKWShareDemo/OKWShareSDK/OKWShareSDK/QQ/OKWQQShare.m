@@ -7,10 +7,60 @@
 //
 
 #import "OKWQQShare.h"
+#import "OKWShareDelegate.h"
+#import <TencentOpenAPI/TencentOAuth.h>
+#import <TencentOpenAPI/TencentOAuthObject.h>
+#import <TencentOpenAPI/TencentApiInterface.h>
+#import <TencentOpenAPI/QQApiInterface.h>
+#import <TencentOpenAPI/TencentMessageObject.h>
 
+#define QQ_APP_KEY  @"1104783662"
+@interface OKWQQShare ()
+@property (nonatomic, strong)TencentOAuth *oauth;
+@end
 @implementation OKWQQShare
++(instancetype)shareInstance
+{
+    static OKWQQShare *shareInstance = nil;
+    static dispatch_once_t once;
+    dispatch_once(&once, ^{
+        shareInstance = [[self alloc] init];
+        shareInstance.oauth = [[TencentOAuth alloc] initWithAppId:QQ_APP_KEY andDelegate:[OKWShareSDK shareDelegate]];
+    });
+    return shareInstance;
+}
 +(void)sendLinkMessage:(OKWShareContent *)content messageType:(OKWShareType)type
 {
+    if (![TencentOAuth iphoneQQInstalled]) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"未安装手机QQ" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil,nil];
+        [alert show];
+        return;
+    }
+    switch (type) {
+        case OKWShareTypeQQ:
+            [[OKWQQShare shareInstance] sendLinkMessageToQQ:content];
+            break;
+        case OKWShareTypeQQSpace:
+            [[OKWQQShare shareInstance] sendLinkMessageToQQSpace:content];
+            break;
+        default:
+            break;
+    }
     
+}
+-(void)sendLinkMessageToQQ:(OKWShareContent *)content
+{
+    QQApiNewsObject *new=[QQApiNewsObject objectWithURL:[NSURL URLWithString:content.webpageUrl] title:content.title description:content.description previewImageData:content.thumbImageData];
+    new.cflag = kQQAPICtrlFlagQQShare;
+    SendMessageToQQReq * req = [SendMessageToQQReq  reqWithContent:new];
+    [QQApiInterface sendReq:req];
+    
+}
+-(void)sendLinkMessageToQQSpace:(OKWShareContent *)content
+{
+    QQApiNewsObject * new=[QQApiNewsObject objectWithURL:[NSURL URLWithString:content.webpageUrl] title:content.title description:content.description previewImageData:content.thumbImageData];
+    new.cflag=kQQAPICtrlFlagQZoneShareOnStart;
+    SendMessageToQQReq * req = [SendMessageToQQReq  reqWithContent:new];
+    [QQApiInterface sendReq:req];
 }
 @end

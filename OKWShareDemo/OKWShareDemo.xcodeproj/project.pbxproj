@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ABCA90021C2BDF8B005B6D6E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABCA90011C2BDF8B005B6D6E /* QuartzCore.framework */; };
+		ABCA90041C2BDFA2005B6D6E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABCA90031C2BDFA2005B6D6E /* Security.framework */; };
+		ABCA90061C2BDFB5005B6D6E /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = ABCA90051C2BDFB5005B6D6E /* libiconv.tbd */; };
+		ABCA90081C2BDFC8005B6D6E /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = ABCA90071C2BDFC8005B6D6E /* libsqlite3.tbd */; };
+		ABCA900A1C2BDFDC005B6D6E /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = ABCA90091C2BDFDC005B6D6E /* libstdc++.tbd */; };
+		ABCA900E1C2C06FE005B6D6E /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABCA900C1C2C06FE005B6D6E /* TencentOpenAPI.framework */; };
+		ABCA900F1C2C06FE005B6D6E /* TencentOpenApi_IOS_Bundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = ABCA900D1C2C06FE005B6D6E /* TencentOpenApi_IOS_Bundle.bundle */; };
 		ABD1B7391C23A75A00F62588 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD1B7381C23A75A00F62588 /* main.m */; };
 		ABD1B73C1C23A75A00F62588 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD1B73B1C23A75A00F62588 /* AppDelegate.m */; };
 		ABD1B73F1C23A75A00F62588 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD1B73E1C23A75A00F62588 /* ViewController.m */; };
@@ -26,6 +33,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ABCA90011C2BDF8B005B6D6E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		ABCA90031C2BDFA2005B6D6E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		ABCA90051C2BDFB5005B6D6E /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		ABCA90071C2BDFC8005B6D6E /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		ABCA90091C2BDFDC005B6D6E /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		ABCA900C1C2C06FE005B6D6E /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentOpenAPI.framework; sourceTree = "<group>"; };
+		ABCA900D1C2C06FE005B6D6E /* TencentOpenApi_IOS_Bundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TencentOpenApi_IOS_Bundle.bundle; sourceTree = "<group>"; };
 		ABD1B7341C23A75A00F62588 /* OKWShareDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OKWShareDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABD1B7381C23A75A00F62588 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ABD1B73A1C23A75A00F62588 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -56,6 +70,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABCA900A1C2BDFDC005B6D6E /* libstdc++.tbd in Frameworks */,
+				ABCA90081C2BDFC8005B6D6E /* libsqlite3.tbd in Frameworks */,
+				ABCA90061C2BDFB5005B6D6E /* libiconv.tbd in Frameworks */,
+				ABCA90041C2BDFA2005B6D6E /* Security.framework in Frameworks */,
+				ABCA90021C2BDF8B005B6D6E /* QuartzCore.framework in Frameworks */,
+				ABCA900E1C2C06FE005B6D6E /* TencentOpenAPI.framework in Frameworks */,
 				ABE327821C2AAB2B00035255 /* MessageUI.framework in Frameworks */,
 				ABD1B7821C23F66300F62588 /* libc++.tbd in Frameworks */,
 				ABD1B7781C23F0DE00F62588 /* SystemConfiguration.framework in Frameworks */,
@@ -73,15 +93,29 @@
 		ABCA8FE51C2B84A2005B6D6E /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				ABCA90091C2BDFDC005B6D6E /* libstdc++.tbd */,
+				ABCA90071C2BDFC8005B6D6E /* libsqlite3.tbd */,
+				ABCA90051C2BDFB5005B6D6E /* libiconv.tbd */,
 				ABD1B7811C23F66300F62588 /* libc++.tbd */,
 				ABD1B7731C23F0B600F62588 /* libz.tbd */,
 				ABD1B7751C23F0C700F62588 /* libsqlite3.0.tbd */,
+				ABCA90031C2BDFA2005B6D6E /* Security.framework */,
+				ABCA90011C2BDF8B005B6D6E /* QuartzCore.framework */,
 				ABE327811C2AAB2B00035255 /* MessageUI.framework */,
 				ABD1B76F1C23AF5A00F62588 /* CoreTelephony.framework */,
 				ABD1B7771C23F0DE00F62588 /* SystemConfiguration.framework */,
 				ABD1B7711C23EF0500F62588 /* libOKWShareSDK.a */,
 			);
 			name = Framework;
+			sourceTree = "<group>";
+		};
+		ABCA900B1C2C06FE005B6D6E /* QQSDK */ = {
+			isa = PBXGroup;
+			children = (
+				ABCA900C1C2C06FE005B6D6E /* TencentOpenAPI.framework */,
+				ABCA900D1C2C06FE005B6D6E /* TencentOpenApi_IOS_Bundle.bundle */,
+			);
+			path = QQSDK;
 			sourceTree = "<group>";
 		};
 		ABD1B72B1C23A75A00F62588 = {
@@ -103,6 +137,7 @@
 		ABD1B7361C23A75A00F62588 /* OKWShareDemo */ = {
 			isa = PBXGroup;
 			children = (
+				ABCA900B1C2C06FE005B6D6E /* QQSDK */,
 				ABD1B7791C23F49700F62588 /* WeChatSDK */,
 				ABD1B73A1C23A75A00F62588 /* AppDelegate.h */,
 				ABD1B73B1C23A75A00F62588 /* AppDelegate.m */,
@@ -196,6 +231,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABCA900F1C2C06FE005B6D6E /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
 				ABD1B7471C23A75A00F62588 /* LaunchScreen.storyboard in Resources */,
 				ABD1B7441C23A75A00F62588 /* Assets.xcassets in Resources */,
 				ABE327551C2A38AE00035255 /* OKWShareResource.bundle in Resources */,
@@ -324,6 +360,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OKWShareDemo/QQSDK",
+				);
 				HEADER_SEARCH_PATHS = "${SDK_ROOT}/usr/include/libxml2";
 				INFOPLIST_FILE = OKWShareDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -345,6 +385,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OKWShareDemo/QQSDK",
+				);
 				HEADER_SEARCH_PATHS = "${SDK_ROOT}/usr/include/libxml2";
 				INFOPLIST_FILE = OKWShareDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;

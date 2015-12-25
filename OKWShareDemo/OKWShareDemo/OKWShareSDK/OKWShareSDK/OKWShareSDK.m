@@ -42,6 +42,7 @@
     shareContent.description = description;
     shareContent.webpageUrl = pageUrl;
     shareContent.thumbImageData = thumbImageData;
+    shareContent.dataType = OKWShareWabURL;
     return shareContent;
     
 }
@@ -56,10 +57,22 @@
     OKWShareActionSheet *actionSheet = [[OKWShareActionSheet alloc] initWithTitle:menuTitle];
     [types enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
        [actionSheet addButtonWithTitle:shareData[obj][@"title"] image:[UIImage imageNamed:shareData[obj][@"image"]] handle:^{
-           [OKWShareSDK shareLink:[obj unsignedIntValue] model:model];
+           [OKWShareSDK share:[obj unsignedIntValue] model:model];
        }];
     }];
     [actionSheet showInView:[[UIApplication sharedApplication].delegate window]];
+}
++(void)share:(OKWShareType)type model:(id)model
+{
+    OKWShareContent *shareModel = model;
+    switch (shareModel.dataType) {
+        case OKWShareWabURL:
+            [OKWShareSDK shareLink:type model:model];
+            break;
+            
+        default:
+            break;
+    }
 }
 +(void)shareLink:(OKWShareType)type model:(id)model
 {

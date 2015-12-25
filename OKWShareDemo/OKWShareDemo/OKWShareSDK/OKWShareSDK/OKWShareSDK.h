@@ -59,7 +59,7 @@ typedef NS_ENUM(NSUInteger,OKWShareType) {
  *  @param type  分享类型
  *  @param model 分享的数据模型
  */
-+(void)shareLink:(OKWShareType)type model:(id)model;
++(void)share:(OKWShareType)type model:(id)model;
 
 /**
  *  获取分享代理对象
