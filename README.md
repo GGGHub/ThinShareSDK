@@ -25,7 +25,7 @@ ThinShareSDK
     id model = [OKWShareSDK webContentTitle:@"分享链接" description:@"测试分享" webpageUrl:@"www.baidu.com" thumbImageData:data];   //构建Model
     [OKWShareSDK defaultShareMenu:@"title" model:model];    //使用默认菜单分享
 ```
-效果
+效果<br>
 ![](http://img.blog.csdn.net/20151225180921424)<br>
 
 ---
@@ -41,7 +41,7 @@ ThinShareSDK
     
     [OKWShareSDK defaultOptionShareMenu:@"title" model:model types:typeArray];
 ```
-效果
+效果<br>
 ![](http://img.blog.csdn.net/20151225181425442)
 
 ---
@@ -51,6 +51,6 @@ ThinShareSDK
     [OKWShareSDK defaultShareMenu:@"title" model:model];
 ```
 
-#关于扩展与源码说明请参考我的[博客]()
+#关于扩展与源码说明请参考[我的博客]()
 
 
