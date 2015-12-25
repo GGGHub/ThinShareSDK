@@ -7,6 +7,7 @@ ThinShareSDK
 ---
 
 ##安装
-1.把`OKWShareSDK`整个项目放在要使用工程的文件夹内下，并把`OKWShareSDK.xcodeproj`，拖拽到该工程目录面板中，创建一个`workSpace`。
-2.因为已经集成了`QQ`，`微信`，与系统分享所以需要添加下面的`Framework`与`静态库文件`
+1.把`OKWShareSDK`整个项目放在要使用工程的文件夹内下，并把`OKWShareSDK.xcodeproj`，拖拽到该工程目录面板中，创建一个`workSpace`。<br>
+2.因为已经集成了`QQ`，`微信`，与系统分享所以需要添加下面的`Framework`与`静态库文件`<br>
+![](https://github.com/GGGHub/AlbumPicker/raw/master/ThinShareSDK/OKWShareDemo/01.png)<br>
 
