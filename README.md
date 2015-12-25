@@ -7,6 +7,42 @@ ThinShareSDK
 ---
 
 ##安装
-1.把`OKWShareSDK`整个项目放在要使用工程的文件夹内下，并把`OKWShareSDK.xcodeproj`，拖拽到该工程目录面板中，创建一个`workSpace`。
-2.因为已经集成了`QQ`，`微信`，与系统分享所以需要添加下面的`Framework`与`静态库文件`
+1. 把`OKWShareSDK`整个项目放在要使用工程的文件夹内下，并把`OKWShareSDK.xcodeproj`，拖拽到该工程目录面板中，创建一个`workSpace`。<br>
+2. 因为已经集成了`QQ`，`微信`，与`系统分享`所以需要添加下面的`Framework`与`静态库文件`<br>
+![](https://raw.githubusercontent.com/GGGHub/ThinShareSDK/master/OKWShareDemo/01.png)<br>
+
+3. 在`Build Settings`选择项卡中设置`Search Paths`<br>
+![](http://img.blog.csdn.net/20151225175435456)
+4. 其他设置请参考Demo示例
+
+---
+##使用
+使用默认菜单分享链接
+```objective-c
+    NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:@"http://img05.tooopen.com/images/20150830/tooopen_sy_140703593676.jpg"]];
+    
+    id model = [OKWShareSDK webContentTitle:@"分享链接" description:@"测试分享" webpageUrl:@"www.baidu.com" thumbImageData:data];   //构建Model
+    [OKWShareSDK defaultShareMenu:@"title" model:model];    //使用默认菜单分享
+```
+效果
+![](http://img.blog.csdn.net/20151225180921424)<br>
+
+---
+选择分享类型分享
+```objective-c
+    //分享链接
+    
+    NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:@"http://i1.ce.cn/ce/life/xxsh/dwyd/200909/22/W020090922351057588500.jpg"]];
+    
+    id model = [OKWShareSDK webContentTitle:@"分享链接" description:@"测试分享" webpageUrl:@"www.baidu.com" thumbImageData:data];   //构建Model
+    
+    NSArray *typeArray = [OKWShareSDK getShareListType:OKWShareTypeQQ,OKWShareTypeWeChatFav,OKWShareTypeSMS ,nil];  //构建分享类型
+    
+    [OKWShareSDK defaultOptionShareMenu:@"title" model:model types:typeArray];
+```
+效果
+![](http://img.blog.csdn.net/20151225181425442)
+
+---
+
 
