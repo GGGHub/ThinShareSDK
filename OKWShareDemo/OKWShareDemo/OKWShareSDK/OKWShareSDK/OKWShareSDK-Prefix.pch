@@ -11,5 +11,5 @@
 
 
 #endif /* OKWShareSDK_Prefix_h */
-#define WEIXIN_APP_KEY        @""
-#define QQ_APP_KEY  @""
+#define WEIXIN_APP_KEY        @"wxae9c0539569e888b"
+#define QQ_APP_KEY  @"1104783662"

@@ -26,9 +26,7 @@
 			<key>CFBundleURLName</key>
 			<string>com.okwei.mobile</string>
 			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>wxae9c0539569e888b</string>
-			</array>
+			<array/>
 		</dict>
 		<dict>
 			<key>CFBundleTypeRole</key>
@@ -36,9 +34,7 @@
 			<key>CFBundleURLName</key>
 			<string>tencentopenapi</string>
 			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>tencent1104783662</string>
-			</array>
+			<array/>
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
@@ -46,18 +42,18 @@
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>weixin</string>
-        <string>mqq</string>
-        <string>mqzoneopensdkapi</string>
-        <string>mqzoneopensdkapi19</string>
-        <string>mqzoneopensdkapiV2</string>
-        <string>mqqOpensdkSSoLogin</string>
-        <string>mqqopensdkapiV2</string>
-        <string>mqqopensdkapiV3</string>
-        <string>wtloginmqq2</string>
-        <string>mqqapi</string>
-        <string>mqqwpa</string>
-        <string>mqzone</string>
-        <string>mqzoneopensdk</string>
+		<string>mqq</string>
+		<string>mqzoneopensdkapi</string>
+		<string>mqzoneopensdkapi19</string>
+		<string>mqzoneopensdkapiV2</string>
+		<string>mqqOpensdkSSoLogin</string>
+		<string>mqqopensdkapiV2</string>
+		<string>mqqopensdkapiV3</string>
+		<string>wtloginmqq2</string>
+		<string>mqqapi</string>
+		<string>mqqwpa</string>
+		<string>mqzone</string>
+		<string>mqzoneopensdk</string>
 	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
