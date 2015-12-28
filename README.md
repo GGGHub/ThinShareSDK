@@ -19,7 +19,7 @@ ThinShareSDK
 ---
 ##使用
 **注意**
-**使用前请设置微信与QQ的AppKey，否则无法分享，由于涉及隐私所以Demo里面没有设置微信与QQ的AppKey**<br>
+**使用前请在`OKWShareDemo-Prefix.pch`与`OKWShareSDK-Prefix.pch`文件中设置微信与QQ的AppKey，否则无法分享，由于涉及隐私所以Demo里面没有设置微信与QQ的AppKey**<br>
 使用默认菜单分享链接
 ```objective-c
     NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:@"http://img05.tooopen.com/images/20150830/tooopen_sy_140703593676.jpg"]];
