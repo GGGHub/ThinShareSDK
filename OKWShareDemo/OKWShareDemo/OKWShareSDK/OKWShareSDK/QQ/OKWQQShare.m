@@ -53,7 +53,8 @@
     QQApiNewsObject *new=[QQApiNewsObject objectWithURL:[NSURL URLWithString:content.webpageUrl] title:content.title description:content.description previewImageData:content.thumbImageData];
     new.cflag = kQQAPICtrlFlagQQShare;
     SendMessageToQQReq * req = [SendMessageToQQReq  reqWithContent:new];
-    [QQApiInterface sendReq:req];
+    NSInteger QQApiSendResultCode = [QQApiInterface sendReq:req];
+    NSLog(@"state--%d",QQApiSendResultCode);
     
 }
 -(void)sendLinkMessageToQQSpace:(OKWShareContent *)content

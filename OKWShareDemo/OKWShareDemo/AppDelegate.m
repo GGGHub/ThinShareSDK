@@ -24,7 +24,7 @@
     if ([[url scheme] isEqualToString:WEIXIN_APP_KEY]) {
         return [WXApi handleOpenURL:url delegate:[OKWShareSDK shareDelegate]];
     }
-    if ([[url scheme] isEqualToString:QQ_APP_KEY]) {
+    if ([[url scheme] hasSuffix:QQ_APP_KEY]) {
         return  [QQApiInterface handleOpenURL:url delegate:[OKWShareSDK shareDelegate]];
     }
     return YES;
@@ -35,7 +35,8 @@
     if ([[url scheme] isEqualToString:WEIXIN_APP_KEY]) {
         return [WXApi handleOpenURL:url delegate:[OKWShareSDK shareDelegate]];
     }
-    if ([[url scheme] isEqualToString:QQ_APP_KEY]) {
+    if ([[url scheme] hasSuffix:QQ_APP_KEY]) {
+        
         return  [QQApiInterface handleOpenURL:url delegate:[OKWShareSDK shareDelegate]];
     }
     return YES;
@@ -44,7 +45,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [WXApi registerApp:WEIXIN_APP_KEY];
-    //QQ的注册写在了静态库里面
+    //QQ的注册写在了静态库里面 OKWQQShare.m 文件里
     return YES;
 }
 

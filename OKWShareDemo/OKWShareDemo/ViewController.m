@@ -30,8 +30,8 @@
     
     NSArray *typeArray = [OKWShareSDK getShareListType:OKWShareTypeQQ,OKWShareTypeWeChatFav,OKWShareTypeSMS ,nil];  //构建分享类型
 
-    
     [OKWShareSDK defaultOptionShareMenu:@"title" model:model types:typeArray];
+    
     
 }
 
